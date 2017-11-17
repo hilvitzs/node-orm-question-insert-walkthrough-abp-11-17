@@ -26,6 +26,7 @@ class Question{
 
       db.run(sql, [self.content], function() {
         self.id = this.id
+        resolve(self)
       })
     })
   }
