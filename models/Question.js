@@ -24,7 +24,9 @@ class Question{
     return new Promise(function(resolve) {
       const sql = 'INSERT INTO questions (content) VALUES (?)';
 
-      db.run(sql, [self], function())
+      db.run(sql, [self.content], function() {
+        
+      })
     })
   }
 }
