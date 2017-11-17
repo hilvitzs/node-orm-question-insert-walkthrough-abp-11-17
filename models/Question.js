@@ -20,6 +20,10 @@ class Question{
 
   insert() {
     const self = this;
+
+    return new Promise(function(resolve) {
+      const sql = 'INSERT'
+    })
   }
 }
 
