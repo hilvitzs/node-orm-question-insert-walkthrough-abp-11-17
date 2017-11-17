@@ -19,7 +19,7 @@ class Question{
   }
 
   insert() {
-    
+    const self = this;
   }
 }
 
