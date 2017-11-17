@@ -22,7 +22,7 @@ class Question{
     const self = this;
 
     return new Promise(function(resolve) {
-      const sql = 'INSERT INTO questions '
+      const sql = 'INSERT INTO questions (content) VALUES (?)'
     })
   }
 }
