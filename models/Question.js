@@ -25,7 +25,7 @@ class Question{
       const sql = 'INSERT INTO questions (content) VALUES (?)';
 
       db.run(sql, [self.content], function() {
-        self.id = this.id
+        self.id = this.lastid
         resolve(self)
       })
     })
